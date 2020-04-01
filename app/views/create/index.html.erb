@@ -1,0 +1,24 @@
+<html>
+<script>
+function ejectuca(){
+    fetch("http://127.0.0.1:3000/create_app/", {
+                    method: 'POST',
+                    headers:{
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': '*'
+  },
+                    body: JSON.stringify({
+                        user: 'jorge1',
+                    })
+                })
+                .then(function(myJson) {
+                    console.log('funciono')
+                });
+                console.log("viendo pas ");
+    }
+</script>
+<h1>prueba</h1>
+<button onclick=ejectuca()
+> probando</button>
+
+</html>
